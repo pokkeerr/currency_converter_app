@@ -21,11 +21,21 @@ class DioClient {
       };
   }
 
-  void updateHeader(String t, String contentType) {
+  void updateHeaderToken(String t, {String? contentType}) {
     dio!.options.headers = {
-      'Content-Type': contentType,
+      'Content-Type': contentType ?? AppConst.HttpHeaderContentType,
       'Authorization': 'Bearer $t'
     };
+  }
+
+  void updateHeader({String? contentType, Map<String, String>? andHeaders}) {
+    var headers = {
+      'Content-Type': contentType ?? AppConst.HttpHeaderContentType,
+    };
+    if (andHeaders != null) {
+      headers.addAll(andHeaders);
+    }
+    dio!.options.headers = headers;
   }
 
   Future<Response> get(
