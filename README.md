@@ -9,13 +9,19 @@ This project is a Task for Digitinary Co. to improve some experience and skills.
 
 build with flutter (Dart freamWork)
 
-The project has tow end point resources :
+The project has tow end point for currncy convert resources :
 1- api.exchangerate-api.com
 2- currencyconverterapi.com
 
 The reason for using two endpoints is that free.currencyconverterapi.com need some connection with the author to get the API key so I start with
 api.exchangerate-api.com to finish the task early but after two days I got the free API key from the author of free.currencyconverterapi.com
+
 and added to the project.
+The endpoint for flags
+1- https://flagcdn.com/
+
+![Screenshot_20221004-220252](https://user-images.githubusercontent.com/16311128/193904560-bdd76e91-3150-4156-afcd-8d2ccff743a5.jpg)
+
 
 Instructions on how to build the project
 
