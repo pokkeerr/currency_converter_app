@@ -1,7 +1,7 @@
 # currency_converter_app
 
 currency converter app
-![alt text](https://pixelhome-my.sharepoint.com/:i:/g/personal/ahmad-izzeddin_onedrivejo_com/EdL6bFjgQWhDkMRjW1LNB9cBA187hN88lVEUO4MhaBim4g?e=BRYLys)
+ ![Screenshot_20221004-214917](https://user-images.githubusercontent.com/16311128/193902604-2ba9cd60-0565-4b18-a109-6362ca3b5bb5.jpg)
 
 ## Getting Started
 
@@ -21,38 +21,38 @@ Instructions on how to build the project
 
 This project follows the MVC structure and this is the tree of folders I used this structure for maintainability and usability.
 
---lib
-    |--cubits >>>  all cubits that used in the project
-        >>> Folder for each cubit
-    |-- data
-        >>> all sources data like contractors and resources
-      |-- constans
-            >>> all constants in the project like api endpoint and some const settings
-      |-- db
-            >>> all tables providers to "CURD" Table in the database
-      |-- models
-            >>> all models that convert the response from the database and the api(internet)
-      |-- network(dio)
-            >>> all network methods and settings
-      |-- repos
-            >>> all Controller repositories to handle the connections with the resources
-      |-- resources
-            >>> all resources we need it in the ui (Managers for fonts and size ...etc)
-       di.dart
-        >>> for creating Depndice injection in the application
-    |-- helpers
-        >>> all helper method for converting strings and log fonts color print for quick debugger
-    |-- presentation
-        >>> all User interface for application
-      |-- screens
-            >>> all main application screens
-      |-- widgets
-            >>> all widgets that used on different screens
-    |-- main.dart
-        >>> mian (run file)
-
+--lib<br />
+    |--cubits >>>  all cubits that used in the project<br />
+        >>> Folder for each cubit<br />
+    |-- data<br />
+        >>> all sources data like contractors and resources<br />
+      |-- constans<br />
+            >>> all constants in the project like api endpoint and some const settings<br />
+      |-- db<br />
+            >>> all tables providers to "CURD" Table in the database<br />
+      |-- models<br />
+            >>> all models that convert the response from the database and the api(internet)<br />
+      |-- network(dio)<br />
+            >>> all network methods and settings<br />
+      |-- repos<br />
+            >>> all Controller repositories to handle the connections with the resources<br />
+      |-- resources<br />
+            >>> all resources we need it in the ui (Managers for fonts and size ...etc)<br />
+       di.dart<br />
+        >>> for creating Depndice injection in the application<br />
+    |-- helpers<br />
+        >>> all helper method for converting strings and log fonts color print for quick debugger<br />
+    |-- presentation<br />
+        >>> all User interface for application<br />
+      |-- screens<br />
+            >>> all main application screens<br />
+      |-- widgets<br /><br />
+            >>> all widgets that used on different screens<br />
+    |-- main.dart<br />
+        >>> mian (run file)<br />
+<br />
 And this the answers of all qustions that writen in Task document:
-
+<br />
 Q1 : what is the image loader page I used?
 A : its "cached_network_image: ^3.2.0" it's a great package for show images with some motions, can cache the image after the first load from URL and if there is some error with the image URL you can handle it with and widget so the UI will be more friendly.
 
