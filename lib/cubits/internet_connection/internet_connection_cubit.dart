@@ -20,6 +20,7 @@ class InternetCubit extends Cubit<InternetState> {
       }
     });
   }
+
   void cencelStrem() {
     connectivityStreamSubscription.cancel();
   }

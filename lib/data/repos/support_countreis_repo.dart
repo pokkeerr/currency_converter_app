@@ -9,7 +9,11 @@ import '../../helpers/logger.dart';
 import '../network/dio/error_handler.dart';
 
 class SupportCountriesRepo {
-  DioClient api = DioClient.instance;
+  SupportCountriesRepo(this.api);
+
+  static SupportCountriesRepo instance(DioClient api) =>
+      SupportCountriesRepo(api);
+  final DioClient api;
 
   Future<Either<Failure, SupportCountriesModel>>
       getAllCountriesFromWeb() async {
