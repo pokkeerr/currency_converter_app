@@ -5,9 +5,9 @@ currency converter app
 
 ## Getting Started
 
-This project is Task for Digitinary Co. to imporve some experice and skills.
+This project is a Task for Digitinary Co. to improve some experience and skills.
 
-build with flutter freamWork (Dart)
+build with flutter (Dart freamWork)
 
 The project has tow end point resources :
 1- api.exchangerate-api.com
