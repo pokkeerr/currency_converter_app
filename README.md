@@ -1,58 +1,61 @@
 # currency_converter_app
 
-currency converter app
-![alt text](https://pixelhome-my.sharepoint.com/:i:/g/personal/ahmad-izzeddin_onedrivejo_com/EdL6bFjgQWhDkMRjW1LNB9cBA187hN88lVEUO4MhaBim4g?e=BRYLys)
+Currency Converter app
+ ![Screenshot_20221004-214917](https://user-images.githubusercontent.com/16311128/193902604-2ba9cd60-0565-4b18-a109-6362ca3b5bb5.jpg)
 
 ## Getting Started
 
-This project is Task for Digitinary Co. to imporve some experice and skills.
+This project is a Task for Digitinary Co. to improve some experience and skills.
 
-build with flutter freamWork (Dart)
+build with flutter (Dart freamWork)
 
-The project has tow end point resources :
-1- api.exchangerate-api.com
-2- currencyconverterapi.com
-
-The reason for using two endpoints is that free.currencyconverterapi.com need some connection with the author to get the API key so I start with
-api.exchangerate-api.com to finish the task early but after two days I got the free API key from the author of free.currencyconverterapi.com
+The project has tow end point for currncy convert resources :<br/>
+1-  [api.exchangerate-api.com](https://www.exchangerate-api.com/)<br/>
+2- [https://free.currencyconverterapi.com](https://free.currencyconverterapi.com/)<br/>
+<br/>
+The reason for using two endpoints is that [https://free.currencyconverterapi.com](https://free.currencyconverterapi.com/) need some connection with the author to get the API key so I start with [api.exchangerate-api.com](https://www.exchangerate-api.com/) to finish the task early but after two days I got the free API key from the author of free.currencyconverterapi.com
 and added to the project.
-
-Instructions on how to build the project
-
-This project follows the MVC structure and this is the tree of folders I used this structure for maintainability and usability.
-
---lib
-    |--cubits >>>  all cubits that used in the project
-        >>> Folder for each cubit
-    |-- data
-        >>> all sources data like contractors and resources
-      |-- constans
-            >>> all constants in the project like api endpoint and some const settings
-      |-- db
-            >>> all tables providers to "CURD" Table in the database
-      |-- models
-            >>> all models that convert the response from the database and the api(internet)
-      |-- network(dio)
-            >>> all network methods and settings
-      |-- repos
-            >>> all Controller repositories to handle the connections with the resources
-      |-- resources
-            >>> all resources we need it in the ui (Managers for fonts and size ...etc)
-       di.dart
-        >>> for creating Depndice injection in the application
-    |-- helpers
-        >>> all helper method for converting strings and log fonts color print for quick debugger
-    |-- presentation
-        >>> all User interface for application
-      |-- screens
-            >>> all main application screens
-      |-- widgets
-            >>> all widgets that used on different screens
-    |-- main.dart
-        >>> mian (run file)
-
+<br/><br/>
+The endpoint for countries flags<br/>
+1- https://flagcdn.com/
+<br/>
+![Screenshot_20221004-220252](https://user-images.githubusercontent.com/16311128/193904560-bdd76e91-3150-4156-afcd-8d2ccff743a5.jpg)
+<br/>
+Instructions on how to build the project<br/>
+This project follows the MVC structure and this is the tree of folders I used this structure for maintainability and usability.<br/>
+<br/><br/>
+--lib<br />
+    |--cubits >>>  all cubits that used in the project<br />
+        >>> Folder for each cubit<br />
+    |-- data<br />
+        >>> all sources data like contractors and resources<br />
+      |-- constans<br />
+            >>> all constants in the project like api endpoint and some const settings<br />
+      |-- db<br />
+            >>> all tables providers to "CURD" Table in the database<br />
+      |-- models<br />
+            >>> all models that convert the response from the database and the api(internet)<br />
+      |-- network(dio)<br />
+            >>> all network methods and settings<br />
+      |-- repos<br />
+            >>> all Controller repositories to handle the connections with the resources<br />
+      |-- resources<br />
+            >>> all resources we need it in the ui (Managers for fonts and size ...etc)<br />
+       di.dart<br />
+        >>> for creating Depndice injection in the application<br />
+    |-- helpers<br />
+        >>> all helper method for converting strings and log fonts color print for quick debugger<br />
+    |-- presentation<br />
+        >>> all User interface for application<br />
+      |-- screens<br />
+            >>> all main application screens<br />
+      |-- widgets<br /><br />
+            >>> all widgets that used on different screens<br />
+    |-- main.dart<br />
+        >>> mian (run file)<br />
+<br />
 And this the answers of all qustions that writen in Task document:
-
+<br />
 Q1 : what is the image loader page I used?
 A : its "cached_network_image: ^3.2.0" it's a great package for show images with some motions, can cache the image after the first load from URL and if there is some error with the image URL you can handle it with and widget so the UI will be more friendly.
 
