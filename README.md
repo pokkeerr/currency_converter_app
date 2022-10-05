@@ -1,25 +1,27 @@
 # currency_converter_app
 
 Currency Converter app
- ![Screenshot_20221004-214917](https://user-images.githubusercontent.com/16311128/193902604-2ba9cd60-0565-4b18-a109-6362ca3b5bb5.jpg)
+![Screenshot_20221005-152932](https://user-images.githubusercontent.com/16311128/194061508-5a4d20ad-1c75-44d1-b08b-7b2e6deb083b.jpg)<br/>
 
 ## Getting Started
 
 This project is a Task for Digitinary Co. to improve some experience and skills.
 
-build with flutter (Dart freamWork)
+build with flutter (Dart freamWork)<br/>
+![Screenshot_20221005-152942](https://user-images.githubusercontent.com/16311128/194061725-2821daad-3618-4a55-b1d1-d3819eb5eca4.jpg)
 
 The project has tow end point for currncy convert resources :<br/>
 1-  [api.exchangerate-api.com](https://www.exchangerate-api.com/)<br/>
 2- [https://free.currencyconverterapi.com](https://free.currencyconverterapi.com/)<br/>
 <br/>
 The reason for using two endpoints is that [https://free.currencyconverterapi.com](https://free.currencyconverterapi.com/) need some connection with the author to get the API key so I start with [api.exchangerate-api.com](https://www.exchangerate-api.com/) to finish the task early but after two days I got the free API key from the author of free.currencyconverterapi.com
+
 and added to the project.
 <br/><br/>
 The endpoint for countries flags<br/>
 1- https://flagcdn.com/
 <br/>
-![Screenshot_20221004-220252](https://user-images.githubusercontent.com/16311128/193904560-bdd76e91-3150-4156-afcd-8d2ccff743a5.jpg)
+
 <br/>
 Instructions on how to build the project<br/>
 This project follows the MVC structure and this is the tree of folders I used this structure for maintainability and usability.<br/>
