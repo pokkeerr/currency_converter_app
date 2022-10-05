@@ -1,3 +1,8 @@
+import 'package:currency_converter_app/data/models/support_countries_model.dart';
+import 'package:currency_converter_app/data/resources/assets_manger.dart';
+import 'package:currency_converter_app/data/resources/values_manager.dart';
+import 'package:currency_converter_app/presentation/widigets/circel_chart_widget.dart';
+import 'package:currency_converter_app/presentation/widigets/spline_area_chart_widget.dart';
 import 'package:flutter/material.dart';
 import '../../cubits/supoort_countries_cubit/suppourted_countries_state.dart';
 import '../../data/models/convert_rates_model.dart';
@@ -20,6 +25,7 @@ class ConvertAllRates extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
+          CircelChartWidget(converterRatesModel),
           Padding(
               padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 18),
               child: Text(
@@ -40,41 +46,43 @@ class ConvertAllRates extends StatelessWidget {
     return Padding(
         padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 25),
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.start,
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: Text('All Rates :',
-                    style: mediumTextStyle(color: Colors.black)
-                        .copyWith(fontSize: 16))),
-            Column(
-                children: converterRatesModel.rates.entries.map<Widget>(((e) {
-              return Card(
-                  // padding: const EdgeInsets.symmetric(vertical: 2),
-                  // backgroundColor: Colors.blue,
-                  // label:
-                  child: Padding(
-                      padding: const EdgeInsets.symmetric(vertical: 2),
-                      child: Row(
-                          mainAxisSize: MainAxisSize.max,
-                          crossAxisAlignment: CrossAxisAlignment.center,
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          children: [
-                            Padding(
-                                padding: const EdgeInsets.all(8.0),
-                                child: Text('${e.key} ',
-                                    style: mediumTextStyle(color: Colors.blue)
-                                        .copyWith(fontSize: 13))),
-                            Padding(
-                                padding: const EdgeInsets.all(8.0),
-                                child: Text(
-                                    '${(e.value * amount).toStringAsFixed(2)} ',
-                                    style: mediumTextStyle(color: Colors.blue)
-                                        .copyWith(fontSize: 13)))
-                          ])));
-            })).toList()),
-          ],
-        ));
+            mainAxisAlignment: MainAxisAlignment.start,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Text('All Rates :',
+                      style: mediumTextStyle(color: Colors.black)
+                          .copyWith(fontSize: 16))),
+              Column(
+                  children: converterRatesModel.rates.entries.map<Widget>(((e) {
+                return Card(
+                    child: Padding(
+                        padding: const EdgeInsets.symmetric(vertical: 2),
+                        child: Row(
+                            mainAxisSize: MainAxisSize.max,
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              Expanded(
+                                  child: Padding(
+                                      padding: const EdgeInsets.all(8.0),
+                                      child: Text(
+                                          '${e.key} - ${CountryInfo.iso4017CountryName(e.key)}',
+                                          style: mediumTextStyle(
+                                                  color: Colors.blue)
+                                              .copyWith(
+                                                  fontSize: 11,
+                                                  overflow:
+                                                      TextOverflow.fade)))),
+                              Padding(
+                                  padding: const EdgeInsets.all(8.0),
+                                  child: Text(
+                                      '${(e.value * amount).toStringAsFixed(2)} ',
+                                      style: mediumTextStyle(color: Colors.blue)
+                                          .copyWith(fontSize: 13)))
+                            ])));
+              })).toList())
+            ]));
   }
 }

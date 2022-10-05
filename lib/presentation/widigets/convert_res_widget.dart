@@ -1,3 +1,4 @@
+import 'package:currency_converter_app/presentation/widigets/spline_area_chart_widget.dart';
 import 'package:flutter/material.dart';
 import '../../cubits/supoort_countries_cubit/suppourted_countries_state.dart';
 import '../../data/models/currencyconverter_model.dart';
@@ -19,40 +20,43 @@ class ConvertResulteWidget extends StatelessWidget {
     return Column(
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
-        children: currencyconverterModel.res.entries
-            .map((e) => Padding(
-                padding: const EdgeInsets.all(8),
-                child: Column(
-                  children: [
-                    Text(e.key.replaceAll("_", " > "),
-                        style: mediumTextStyle(color: Colors.green)
-                            .copyWith(fontSize: 20)),
-                    ...e.value.entries
-                        .map((ee) => Card(
-                                child: Row(
-                                    mainAxisAlignment:
-                                        MainAxisAlignment.spaceBetween,
-                                    crossAxisAlignment:
-                                        CrossAxisAlignment.center,
-                                    children: [
-                                  Padding(
-                                      padding: const EdgeInsets.all(8.0),
-                                      child: Text(ee.key,
-                                          style: mediumTextStyle(
-                                                  color: Colors.blue)
-                                              .copyWith(fontSize: 14))),
-                                  Padding(
-                                      padding: const EdgeInsets.all(8.0),
-                                      child: Text(
-                                          (ee.value * amount)
-                                              .toStringAsFixed(2),
-                                          style: mediumTextStyle(
-                                                  color: Colors.blue)
-                                              .copyWith(fontSize: 14)))
-                                ])))
-                        .toList()
-                  ],
-                )))
-            .toList());
+        children: [
+          SplineAreaChartWidget(currencyconverterModel),
+          ...currencyconverterModel.res.entries
+              .map((e) => Padding(
+                  padding: const EdgeInsets.all(8),
+                  child: Column(
+                    children: [
+                      Text(e.key.replaceAll("_", " > "),
+                          style: mediumTextStyle(color: Colors.green)
+                              .copyWith(fontSize: 20)),
+                      ...e.value.entries
+                          .map((ee) => Card(
+                                  child: Row(
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.spaceBetween,
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.center,
+                                      children: [
+                                    Padding(
+                                        padding: const EdgeInsets.all(8.0),
+                                        child: Text(ee.key,
+                                            style: mediumTextStyle(
+                                                    color: Colors.blue)
+                                                .copyWith(fontSize: 14))),
+                                    Padding(
+                                        padding: const EdgeInsets.all(8.0),
+                                        child: Text(
+                                            (ee.value * amount)
+                                                .toStringAsFixed(2),
+                                            style: mediumTextStyle(
+                                                    color: Colors.blue)
+                                                .copyWith(fontSize: 14)))
+                                  ])))
+                          .toList()
+                    ],
+                  )))
+              .toList()
+        ]);
   }
 }

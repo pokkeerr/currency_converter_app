@@ -134,10 +134,12 @@ class _MyHomePageState extends State<MyHomePage> {
         child: ElevatedButton(
             onPressed: () async {
               if (_fromKey.currentState?.validate() ?? false) {
-                await BlocProvider.of<CurrencyConvertCubit>(context).convert(
-                    countrystate.fromCountry.fromIso3166ToIso4017(),
-                    countrystate.toCountry.fromIso3166ToIso4017(),
-                    amountTxtCtrl.text);
+                if (amountTxtCtrl.text.isNotEmpty) {
+                  await BlocProvider.of<CurrencyConvertCubit>(context).convert(
+                      countrystate.fromCountry.fromIso3166ToIso4017(),
+                      countrystate.toCountry.fromIso3166ToIso4017(),
+                      amountTxtCtrl.text);
+                }
               }
             },
             child: Container(
@@ -186,7 +188,8 @@ class _MyHomePageState extends State<MyHomePage> {
                   color: Colors.green,
                   fontWeight: FontWeight.bold))),
       ConvertResulteWidget(
-          amount: double.parse(amountTxtCtrl.text),
+          amount:
+              amountTxtCtrl.text.isEmpty ? 0 : double.parse(amountTxtCtrl.text),
           currencyconverterModel: currencyWeeklyconverterModel,
           countrystate: countrystate),
     ]);
@@ -195,15 +198,9 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget _loadfromfromRates(ConverterRatesModel converterRatesModel,
       SuppourtedCountriesLoadedState countrystate) {
     return Column(children: [
-      const Padding(
-          padding: EdgeInsets.symmetric(horizontal: 8.0),
-          child: Text("api.exchangerate-api.com Converter",
-              style: TextStyle(
-                  fontSize: 14,
-                  color: Colors.green,
-                  fontWeight: FontWeight.bold))),
       ConvertAllRates(
-          amount: double.parse(amountTxtCtrl.text),
+          amount:
+              amountTxtCtrl.text.isEmpty ? 0 : double.parse(amountTxtCtrl.text),
           converterRatesModel: converterRatesModel,
           countrystate: countrystate)
     ]);
@@ -278,11 +275,22 @@ class _MyHomePageState extends State<MyHomePage> {
                                   items: state.supportCountriesModel.countries
                                       .map((e) => _dropDownItem(e))
                                       .toList(),
-                                  onChanged: (CountryInfo? selectedCountry) {
+                                  onChanged:
+                                      (CountryInfo? selectedCountry) async {
                                     if (selectedCountry != null) {
                                       BlocProvider.of<SuppourtedCountriesCubit>(
                                               context)
                                           .setSoucendCountry(selectedCountry);
+                                      if (amountTxtCtrl.text.isNotEmpty) {
+                                        await BlocProvider.of<
+                                                CurrencyConvertCubit>(context)
+                                            .convert(
+                                                state.fromCountry
+                                                    .fromIso3166ToIso4017(),
+                                                selectedCountry
+                                                    .fromIso3166ToIso4017(),
+                                                amountTxtCtrl.text);
+                                      }
                                     }
                                   }))),
                     ],
@@ -296,16 +304,20 @@ class _MyHomePageState extends State<MyHomePage> {
                 return null;
               },
               onEditingComplete: () async {
-                await BlocProvider.of<CurrencyConvertCubit>(context).convert(
-                    state.fromCountry.fromIso3166ToIso4017(),
-                    state.toCountry.fromIso3166ToIso4017(),
-                    amountTxtCtrl.text);
+                if (amountTxtCtrl.text.isNotEmpty) {
+                  await BlocProvider.of<CurrencyConvertCubit>(context).convert(
+                      state.fromCountry.fromIso3166ToIso4017(),
+                      state.toCountry.fromIso3166ToIso4017(),
+                      amountTxtCtrl.text);
+                }
               },
               onFieldSubmitted: (_) async {
-                await BlocProvider.of<CurrencyConvertCubit>(context).convert(
-                    state.fromCountry.fromIso3166ToIso4017(),
-                    state.toCountry.fromIso3166ToIso4017(),
-                    amountTxtCtrl.text);
+                if (amountTxtCtrl.text.isNotEmpty) {
+                  await BlocProvider.of<CurrencyConvertCubit>(context).convert(
+                      state.fromCountry.fromIso3166ToIso4017(),
+                      state.toCountry.fromIso3166ToIso4017(),
+                      amountTxtCtrl.text);
+                }
               }));
     }
     return const SizedBox();

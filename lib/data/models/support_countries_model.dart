@@ -571,742 +571,496 @@ class CountryInfo {
         return 'AL';
       case 'DZA':
         return 'DZ';
-
       case 'ASM':
         return 'AS';
-
       case 'AND':
         return 'AD';
-
       case 'AGO':
         return 'AO';
-
       case 'AIA':
         return 'AI';
-
       case 'ATA':
         return 'AQ';
-
       case 'ATG':
         return 'AG';
-
       case 'ARG':
         return 'AR';
-
       case 'ARM':
         return 'AM';
-
       case 'ABW':
         return 'AW';
-
       case 'AUS':
         return 'AU';
-
       case 'AUT':
         return 'AT';
-
       case 'AZE':
         return 'AZ';
-
       case 'BHS':
         return 'BS';
-
       case 'BHR':
         return 'BH';
-
       case 'BGD':
         return 'BD';
-
       case 'BRB':
         return 'BB';
-
       case 'BLR':
         return 'BY';
-
       case 'BEL':
         return 'BE';
-
       case 'BLZ':
         return 'BZ';
-
       case 'BEN':
         return 'BJ';
-
       case 'BMU':
         return 'BM';
-
       case 'BTN':
         return 'BT';
-
       case 'BOL':
         return 'BO';
-
       case 'BES':
         return 'BQ';
-
       case 'BIH':
         return 'BA';
-
       case 'BWA':
         return 'BW';
-
       case 'BVT':
         return 'BV';
-
       case 'BRA':
         return 'BR';
-
       case 'IOT':
         return 'IO';
-
       case 'BRN':
         return 'BN';
-
       case 'BGR':
         return 'BG';
-
       case 'BFA':
         return 'BF';
-
       case 'BDI':
         return 'BI';
-
       case 'CPV':
         return 'CV';
-
       case 'KHM':
         return 'KH';
-
       case 'CMR':
         return 'CM';
-
       case 'CAN':
         return 'CA';
-
       case 'CYM':
         return 'KY';
-
       case 'CAF':
         return 'CF';
-
       case 'TCD':
         return 'TD';
-
       case 'CHL':
         return 'CL';
-
       case 'CHN':
         return 'CN';
-
       case 'CXR':
         return 'CX';
-
       case 'CCK':
         return 'CC';
-
       case 'COL':
         return 'CO';
-
       case 'COM':
         return 'KM';
-
       case 'COD':
         return 'CD';
-
       case 'COG':
         return 'CG';
-
       case 'COK':
         return 'CK';
-
       case 'CRI':
         return 'CR';
-
       case 'CIV':
         return 'CI';
-
       case 'HRV':
         return 'HR';
-
       case 'CUB':
         return 'CU';
-
       case 'CUW':
         return 'CW';
-
       case 'CYP':
         return 'CY';
-
       case 'CZE':
         return 'CZ';
-
       case 'DNK':
         return 'DK';
-
       case 'DJI':
         return 'DJ';
-
       case 'DMA':
         return 'DM';
-
       case 'DOM':
         return 'DO';
-
       case 'ECU':
         return 'EC';
-
       case 'EGY':
         return 'EG';
-
       case 'SLV':
         return 'SV';
-
       case 'GNQ':
         return 'GQ';
-
       case 'ERI':
         return 'ER';
-
       case 'EST':
         return 'EE';
-
       case 'SWZ':
         return 'SZ';
-
       case 'ETH':
         return 'ET';
-
       case 'FLK':
         return 'FK';
-
       case 'FRO':
         return 'FO';
-
       case 'FJI':
         return 'FJ';
-
       case 'FIN':
         return 'FI';
-
       case 'FRA':
         return 'FR';
-
       case 'GUF':
         return 'GF';
-
       case 'PYF':
         return 'PF';
-
       case 'ATF':
         return 'TF';
-
       case 'GAB':
         return 'GA';
-
       case 'GMB':
         return 'GM';
-
       case 'GEO':
         return 'GE';
-
       case 'DEU':
         return 'DE';
-
       case 'GHA':
         return 'GH';
-
       case 'GIB':
         return 'GI';
-
       case 'GRC':
         return 'GR';
-
       case 'GRL':
         return 'GL';
-
       case 'GRD':
         return 'GD';
-
       case 'GLP':
         return 'GP';
-
       case 'GUM':
         return 'GU';
-
       case 'GTM':
         return 'GT';
-
       case 'GGY':
         return 'GG';
-
       case 'GIN':
         return 'GN';
-
       case 'GNB':
         return 'GW';
-
       case 'GUY':
         return 'GY';
-
       case 'HTI':
         return 'HT';
-
       case 'HMD':
         return 'HM';
-
       case 'VAT':
         return 'VA';
-
       case 'HND':
         return 'HN';
-
       case 'HKG':
         return 'HK';
-
       case 'HUN':
         return 'HU';
-
       case 'ISL':
         return 'IS';
-
       case 'IND':
         return 'IN';
-
       case 'IDN':
         return 'ID';
-
       case 'IRN':
         return 'IR';
-
       case 'IRQ':
         return 'IQ';
-
       case 'IRL':
         return 'IE';
-
       case 'IMN':
         return 'IM';
-
       case 'ISR':
         return 'IL';
-
       case 'ITA':
         return 'IT';
-
       case 'JAM':
         return 'JM';
-
       case 'JPN':
         return 'JP';
-
       case 'JEY':
         return 'JE';
-
       case 'JOR':
         return 'JO';
-
       case 'KAZ':
         return 'KZ';
-
       case 'KEN':
         return 'KE';
-
       case 'KIR':
         return 'KI';
-
       case 'PRK':
         return 'KP';
-
       case 'KOR':
         return 'KR';
-
       case 'KWT':
         return 'KW';
-
       case 'KGZ':
         return 'KG';
-
       case 'LAO':
         return 'LA';
-
       case 'LVA':
         return 'LV';
-
       case 'LBN':
         return 'LB';
-
       case 'LSO':
         return 'LS';
-
       case 'LBR':
         return 'LR';
-
       case 'LBY':
         return 'LY';
-
       case 'LIE':
         return 'LI';
-
       case 'LTU':
         return 'LT';
-
       case 'LUX':
         return 'LU';
-
       case 'MAC':
         return 'MO';
-
       case 'MKD':
         return 'MK';
-
       case 'MDG':
         return 'MG';
-
       case 'MWI':
         return 'MW';
-
       case 'MYS':
         return 'MY';
-
       case 'MDV':
         return 'MV';
-
       case 'MLI':
         return 'ML';
-
       case 'MLT':
         return 'MT';
-
       case 'MHL':
         return 'MH';
-
       case 'MTQ':
         return 'MQ';
-
       case 'MRT':
         return 'MR';
-
       case 'MUS':
         return 'MU';
-
       case 'MYT':
         return 'YT';
-
       case 'MEX':
         return 'MX';
-
       case 'FSM':
         return 'FM';
-
       case 'MDA':
         return 'MD';
-
       case 'MCO':
         return 'MC';
-
       case 'MNG':
         return 'MN';
-
       case 'MNE':
         return 'ME';
-
       case 'MSR':
         return 'MS';
-
       case 'MAR':
         return 'MA';
-
       case 'MOZ':
         return 'MZ';
-
       case 'MMR':
         return 'MM';
-
       case 'NAM':
         return 'NA';
-
       case 'NRU':
         return 'NR';
-
       case 'NPL':
         return 'NP';
-
       case 'NLD':
         return 'NL';
-
       case 'NCL':
         return 'NC';
-
       case 'NZL':
         return 'NZ';
-
       case 'NIC':
         return 'NI';
-
       case 'NER':
         return 'NE';
-
       case 'NGA':
         return 'NG';
-
       case 'NIU':
         return 'NU';
-
       case 'NFK':
         return 'NF';
-
       case 'MNP':
         return 'MP';
-
       case 'NOR':
         return 'NO';
-
       case 'OMN':
         return 'OM';
-
       case 'PAK':
         return 'PK';
-
       case 'PLW':
         return 'PW';
-
       case 'PSE':
         return 'PS';
-
       case 'PAN':
         return 'PA';
-
       case 'PNG':
         return 'PG';
-
       case 'PRY':
         return 'PY';
-
       case 'PER':
         return 'PE';
-
       case 'PHL':
         return 'PH';
-
       case 'PCN':
         return 'PN';
-
       case 'POL':
         return 'PL';
-
       case 'PRT':
         return 'PT';
-
       case 'PRI':
         return 'PR';
-
       case 'QAT':
         return 'QA';
-
       case 'REU':
         return 'RE';
-
       case 'ROU':
         return 'RO';
-
       case 'RUS':
         return 'RU';
-
       case 'RWA':
         return 'RW';
-
       case 'BLM':
         return 'BL';
-
       case 'SHN':
         return 'SH';
-
       case 'KNA':
         return 'KN';
-
       case 'LCA':
         return 'LC';
-
       case 'MAF':
         return 'MF';
-
       case 'SPM':
         return 'PM';
-
       case 'VCT':
         return 'VC';
-
       case 'WSM':
         return 'WS';
-
       case 'SMR':
         return 'SM';
-
       case 'STP':
         return 'ST';
-
       case 'SAU':
         return 'SA';
-
       case 'SEN':
         return 'SN';
-
       case 'SRB':
         return 'RS';
-
       case 'SYC':
         return 'SC';
-
       case 'SLE':
         return 'SL';
-
       case 'SGP':
         return 'SG';
-
       case 'SXM':
         return 'SX';
-
       case 'SVK':
         return 'SK';
-
       case 'SVN':
         return 'SI';
-
       case 'SLB':
         return 'SB';
-
       case 'SOM':
         return 'SO';
-
       case 'ZAF':
         return 'ZA';
-
       case 'SGS':
         return 'GS';
-
       case 'SSD':
         return 'SS';
-
       case 'ESP':
         return 'ES';
-
       case 'LKA':
         return 'LK';
-
       case 'SDN':
         return 'SD';
-
       case 'SUR':
         return 'SR';
-
       case 'SJM':
         return 'SJ';
-
       case 'SWE':
         return 'SE';
-
       case 'CHE':
         return 'CH';
-
       case 'SYR':
         return 'SY';
-
       case 'TWN':
         return 'TW';
-
       case 'TJK':
         return 'TJ';
-
       case 'TZA':
         return 'TZ';
-
       case 'THA':
         return 'TH';
-
       case 'TLS':
         return 'TL';
-
       case 'TGO':
         return 'TG';
-
       case 'TKL':
         return 'TK';
-
       case 'TON':
         return 'TO';
-
       case 'TTO':
         return 'TT';
-
       case 'TUN':
         return 'TN';
-
       case 'TUR':
         return 'TR';
-
       case 'TKM':
         return 'TM';
-
       case 'TCA':
         return 'TC';
-
       case 'TUV':
         return 'TV';
-
       case 'UGA':
         return 'UG';
-
       case 'UKR':
         return 'UA';
-
       case 'ARE':
         return 'AE';
-
       case 'GBR':
         return 'GB';
-
       case 'UMI':
         return 'UM';
-
       case 'USA':
         return 'US';
-
       case 'URY':
         return 'UY';
-
       case 'UZB':
         return 'UZ';
-
       case 'VUT':
         return 'VU';
-
       case 'VEN':
         return 'VE';
-
       case 'VNM':
         return 'VN';
-
       case 'VGB':
         return 'VG';
-
       case 'VIR':
         return 'VI';
-
       case 'WLF':
         return 'WF';
-
       case 'ESH':
         return 'EH';
-
       case 'YEM':
         return 'YE';
-
       case 'ZMB':
         return 'ZM';
-
       case 'ZWE':
         return 'ZW';
-
       default:
         return key;
     }
@@ -1813,6 +1567,338 @@ class CountryInfo {
 
       default:
         return 'USD';
+    }
+  }
+
+  static String iso4017CountryName(String n) {
+    switch (n) {
+      case 'AED':
+        return 'United Arab Emirates Dirham';
+      case 'AFN':
+        return 'Afghanistan Afghani';
+      case 'ALL':
+        return 'Albania Lek';
+      case 'AMD':
+        return 'Armenia Dram';
+      case 'ANG':
+        return 'Netherlands Antilles Guilder';
+      case 'AOA':
+        return 'Angola Kwanza';
+      case 'ARS':
+        return 'Argentina Peso';
+      case 'AUD':
+        return 'Australia Dollar';
+      case 'AWG':
+        return 'Aruba Guilder';
+      case 'AZN':
+        return 'Azerbaijan Manat';
+      case 'BAM':
+        return 'Bosnia and Herzegovina Convertible Mark';
+      case 'BBD':
+        return 'Barbados Dollar';
+      case 'BDT':
+        return 'Bangladesh Taka';
+      case 'BGN':
+        return 'Bulgaria Lev';
+      case 'BHD':
+        return 'Bahrain Dinar';
+      case 'BIF':
+        return 'Burundi Franc';
+      case 'BMD':
+        return 'Bermuda Dollar';
+      case 'BND':
+        return 'Brunei Darussalam Dollar';
+      case 'BOB':
+        return 'Bolivia Bolíviano';
+      case 'BRL':
+        return 'Brazil Real';
+      case 'BSD':
+        return 'Bahamas Dollar';
+      case 'BTN':
+        return 'Bhutan Ngultrum';
+      case 'BWP':
+        return 'Botswana Pula';
+      case 'BYN':
+        return 'Belarus Ruble';
+      case 'BZD':
+        return 'Belize Dollar';
+      case 'CAD':
+        return 'Canada Dollar';
+      case 'CDF':
+        return 'Congo/Kinshasa Franc';
+      case 'CHF':
+        return 'Switzerland Franc';
+      case 'CLP':
+        return 'Chile Peso';
+      case 'CNY':
+        return 'China Yuan Renminbi';
+      case 'COP':
+        return 'Colombia Peso';
+      case 'CRC':
+        return 'Costa Rica Colon';
+      case 'CUC':
+        return 'Cuba Convertible Peso';
+      case 'CUP':
+        return 'Cuba Peso';
+      case 'CVE':
+        return 'Cape Verde Escudo';
+      case 'CZK':
+        return 'Czech Republic Koruna';
+      case 'DJF':
+        return 'Djibouti Franc';
+      case 'DKK':
+        return 'Denmark Krone';
+      case 'DOP':
+        return 'Dominican Republic Peso';
+      case 'DZD':
+        return 'Algeria Dinar';
+      case 'EGP':
+        return 'Egypt Pound';
+      case 'ERN':
+        return 'Eritrea Nakfa';
+      case 'ETB':
+        return 'Ethiopia Birr';
+      case 'EUR':
+        return 'Euro Member Countries';
+      case 'FJD':
+        return 'Fiji Dollar';
+      case 'FKP':
+        return 'Falkland Islands (Malvinas) Pound';
+      case 'GBP':
+        return 'United Kingdom Pound';
+      case 'GEL':
+        return 'Georgia Lari';
+      case 'GGP':
+        return 'Guernsey Pound';
+      case 'GHS':
+        return 'Ghana Cedi';
+      case 'GIP':
+        return 'Gibraltar Pound';
+      case 'GMD':
+        return 'Gambia Dalasi';
+      case 'GNF':
+        return 'Guinea Franc';
+      case 'GTQ':
+        return 'Guatemala Quetzal';
+      case 'GYD':
+        return 'Guyana Dollar';
+      case 'HKD':
+        return 'Hong Kong Dollar';
+      case 'HNL':
+        return 'Honduras Lempira';
+      case 'HRK':
+        return 'Croatia Kuna';
+      case 'HTG':
+        return 'Haiti Gourde';
+      case 'HUF':
+        return 'Hungary Forint';
+      case 'IDR':
+        return 'Indonesia Rupiah';
+      case 'ILS':
+        return 'Israel Shekel';
+      case 'IMP':
+        return 'Isle of Man Pound';
+      case 'INR':
+        return 'India Rupee';
+      case 'IQD':
+        return 'Iraq Dinar';
+      case 'IRR':
+        return 'Iran Rial';
+      case 'ISK':
+        return 'Iceland Krona';
+      case 'JEP':
+        return 'Jersey Pound';
+      case 'JMD':
+        return 'Jamaica Dollar';
+      case 'JOD':
+        return 'Jordan Dinar';
+      case 'JPY':
+        return 'Japan Yen';
+      case 'KES':
+        return 'Kenya Shilling';
+      case 'KGS':
+        return 'Kyrgyzstan Som';
+      case 'KHR':
+        return 'Cambodia Riel';
+      case 'KMF':
+        return 'Comorian Franc';
+      case 'KPW':
+        return 'Korea (North) Won';
+      case 'KRW':
+        return 'Korea (South) Won';
+      case 'KWD':
+        return 'Kuwait Dinar';
+      case 'KYD':
+        return 'Cayman Islands Dollar';
+      case 'KZT':
+        return 'Kazakhstan Tenge';
+      case 'LAK':
+        return 'Laos Kip';
+      case 'LBP':
+        return 'Lebanon Pound';
+      case 'LKR':
+        return 'Sri Lanka Rupee';
+      case 'LRD':
+        return 'Liberia Dollar';
+      case 'LSL':
+        return 'Lesotho Loti';
+      case 'LYD':
+        return 'Libya Dinar';
+      case 'MAD':
+        return 'Morocco Dirham';
+      case 'MDL':
+        return 'Moldova Leu';
+      case 'MGA':
+        return 'Madagascar Ariary';
+      case 'MKD':
+        return 'Macedonia Denar';
+      case 'MMK':
+        return 'Myanmar (Burma) Kyat';
+      case 'MNT':
+        return 'Mongolia Tughrik';
+      case 'MOP':
+        return 'Macau Pataca';
+      case 'MRU':
+        return 'Mauritania Ouguiya';
+      case 'MUR':
+        return 'Mauritius Rupee';
+      case 'MVR':
+        return 'Maldives (Maldive Islands) Rufiyaa';
+      case 'MWK':
+        return 'Malawi Kwacha';
+      case 'MXN':
+        return 'Mexico Peso';
+      case 'MYR':
+        return 'Malaysia Ringgit';
+      case 'MZN':
+        return 'Mozambique Metical';
+      case 'NAD':
+        return 'Namibia Dollar';
+      case 'NGN':
+        return 'Nigeria Naira';
+      case 'NIO':
+        return 'Nicaragua Cordoba';
+      case 'NOK':
+        return 'Norway Krone';
+      case 'NPR':
+        return 'Nepal Rupee';
+      case 'NZD':
+        return 'New Zealand Dollar';
+      case 'OMR':
+        return 'Oman Rial';
+      case 'PAB':
+        return 'Panama Balboa';
+      case 'PEN':
+        return 'Peru Sol';
+      case 'PGK':
+        return 'Papua New Guinea Kina';
+      case 'PHP':
+        return 'Philippines Peso';
+      case 'PKR':
+        return 'Pakistan Rupee';
+      case 'PLN':
+        return 'Poland Zloty';
+      case 'PYG':
+        return 'Paraguay Guarani';
+      case 'QAR':
+        return 'Qatar Riyal';
+      case 'RON':
+        return 'Romania Leu';
+      case 'RSD':
+        return 'Serbia Dinar';
+      case 'RUB':
+        return 'Russia Ruble';
+      case 'RWF':
+        return 'Rwanda Franc';
+      case 'SAR':
+        return 'Saudi Arabia Riyal';
+      case 'SBD':
+        return 'Solomon Islands Dollar';
+      case 'SCR':
+        return 'Seychelles Rupee';
+      case 'SDG':
+        return 'Sudan Pound';
+      case 'SEK':
+        return 'Sweden Krona';
+      case 'SGD':
+        return 'Singapore Dollar';
+      case 'SHP':
+        return 'Saint Helena Pound';
+      case 'SLL':
+        return 'Sierra Leone Leone';
+      case 'SOS':
+        return 'Somalia Shilling';
+      case 'SPL':
+        return '	Seborga Luigino';
+      case 'SRD':
+        return 'Suriname Dollar';
+      case 'STN':
+        return 'São Tomé and Príncipe Dobra';
+      case 'SVC':
+        return 'El Salvador Colon';
+      case 'SYP':
+        return 'Syria Pound';
+      case 'SZL':
+        return 'eSwatini Lilangeni';
+      case 'THB':
+        return 'Thailand Baht';
+      case 'TJS':
+        return 'Tajikistan Somoni';
+      case 'TMT':
+        return 'Turkmenistan Manat';
+      case 'TND':
+        return 'Tunisia Dinar';
+      case 'TOP':
+        return 'Tonga Pa\'anga';
+      case 'TRY':
+        return 'Turkey Lira';
+      case 'TTD':
+        return 'Trinidad and Tobago Dollar';
+      case 'TVD':
+        return 'Tuvalu Dollar';
+      case 'TWD':
+        return 'Taiwan New Dollar';
+      case 'TZS':
+        return 'Tanzania Shilling';
+      case 'UAH':
+        return 'Ukraine Hryvnia';
+      case 'UGX':
+        return 'Uganda Shilling';
+      case 'USD':
+        return 'United States Dollar';
+      case 'UYU':
+        return 'Uruguay Peso';
+      case 'UZS':
+        return 'Uzbekistan Som';
+      case 'VEF':
+        return 'Venezuela Bolívar';
+      case 'VND':
+        return 'Viet Nam Dong';
+      case 'VUV':
+        return 'Vanuatu Vatu';
+      case 'WST':
+        return 'Samoa Tala';
+      case 'XAF':
+        return 'Communauté Financière Africaine (BEAC) CFA Franc BEAC';
+      case 'XCD':
+        return 'East Caribbean Dollar';
+      case 'XDR':
+        return 'International Monetary Fund (IMF) Special Drawing Rights';
+      case 'XOF':
+        return 'Communauté Financière Africaine (BCEAO) Franc';
+      case 'XPF':
+        return 'Comptoirs Français du Pacifique (CFP) Franc';
+      case 'YER':
+        return 'Yemen Rial';
+      case 'ZAR':
+        return 'South Africa Rand';
+      case 'ZMW':
+        return 'Zambia Kwacha';
+      case 'ZWD':
+        return 'Zimbabwe Dollar';
+
+      default:
+        return '';
     }
   }
 }

@@ -54,7 +54,7 @@ class CurrencyConvertRepo {
   //       return Left(Failure(
   //           code: res.statusCode!,
   //           message:
-  //               res.data['message'] ?? "errrrorrr convertFromCurrencyConverter",
+  //               res.data['error'] ?? "errrrorrr convertFromCurrencyConverter",
   //           status: res.data['status'] ?? res.statusCode));
   //     }
   //   } catch (e) {
@@ -83,12 +83,13 @@ class CurrencyConvertRepo {
         return Left(Failure(
             code: res.statusCode!,
             message:
-                res.data['message'] ?? "errrrorrr CurrencyWeeklyconverterModel",
+                res.data['error'] ?? "errrrorrr CurrencyWeeklyconverterModel",
             status: res.data['status'] ?? res.statusCode));
       }
     } catch (e) {
       Log.red(
           'Erorr >>>> CurrencyConvertRepo.convertFromCurrencyConverter :$e');
+      if (res.data['error'] != null) {}
       return Left(ErrorHandler.handle(e).failure);
     }
   }
